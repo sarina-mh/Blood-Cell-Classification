@@ -1,0 +1,35 @@
+Config {'hidden_dims': [512, 256, 128], 'dropout': 0.2, 'lr': 0.001, 'optimizer_name': 'adam'} -> params=6456837, test_acc=0.8700
+Config {'hidden_dims': [512, 256, 128], 'dropout': 0.2, 'lr': 0.001, 'optimizer_name': 'sgd'} -> params=6456837, test_acc=0.8110
+Config {'hidden_dims': [512, 256, 128], 'dropout': 0.2, 'lr': 0.0005, 'optimizer_name': 'adam'} -> params=6456837, test_acc=0.8520
+Config {'hidden_dims': [512, 256, 128], 'dropout': 0.2, 'lr': 0.0005, 'optimizer_name': 'sgd'} -> params=6456837, test_acc=0.7870
+Config {'hidden_dims': [512, 256, 128], 'dropout': 0.4, 'lr': 0.001, 'optimizer_name': 'adam'} -> params=6456837, test_acc=0.8530
+Config {'hidden_dims': [512, 256, 128], 'dropout': 0.4, 'lr': 0.001, 'optimizer_name': 'sgd'} -> params=6456837, test_acc=0.7930
+Config {'hidden_dims': [512, 256, 128], 'dropout': 0.4, 'lr': 0.0005, 'optimizer_name': 'adam'} -> params=6456837, test_acc=0.8740
+Config {'hidden_dims': [512, 256, 128], 'dropout': 0.4, 'lr': 0.0005, 'optimizer_name': 'sgd'} -> params=6456837, test_acc=0.7740
+Config {'hidden_dims': [1024, 256], 'dropout': 0.2, 'lr': 0.001, 'optimizer_name': 'adam'} -> params=12847621, test_acc=0.8730
+Config {'hidden_dims': [1024, 256], 'dropout': 0.2, 'lr': 0.001, 'optimizer_name': 'sgd'} -> params=12847621, test_acc=0.8250
+Config {'hidden_dims': [1024, 256], 'dropout': 0.2, 'lr': 0.0005, 'optimizer_name': 'adam'} -> params=12847621, test_acc=0.8930
+Config {'hidden_dims': [1024, 256], 'dropout': 0.2, 'lr': 0.0005, 'optimizer_name': 'sgd'} -> params=12847621, test_acc=0.8290
+Config {'hidden_dims': [1024, 256], 'dropout': 0.4, 'lr': 0.001, 'optimizer_name': 'adam'} -> params=12847621, test_acc=0.8210
+Config {'hidden_dims': [1024, 256], 'dropout': 0.4, 'lr': 0.001, 'optimizer_name': 'sgd'} -> params=12847621, test_acc=0.8450
+Config {'hidden_dims': [1024, 256], 'dropout': 0.4, 'lr': 0.0005, 'optimizer_name': 'adam'} -> params=12847621, test_acc=0.8320
+Config {'hidden_dims': [1024, 256], 'dropout': 0.4, 'lr': 0.0005, 'optimizer_name': 'sgd'} -> params=12847621, test_acc=0.8200
+Config {'hidden_dims': [512, 256], 'dropout': 0.2, 'lr': 0.001, 'optimizer_name': 'adam'} -> params=6424581, test_acc=0.8830
+Config {'hidden_dims': [512, 256], 'dropout': 0.2, 'lr': 0.001, 'optimizer_name': 'sgd'} -> params=6424581, test_acc=0.8390
+Config {'hidden_dims': [512, 256], 'dropout': 0.2, 'lr': 0.0005, 'optimizer_name': 'adam'} -> params=6424581, test_acc=0.8630
+Config {'hidden_dims': [512, 256], 'dropout': 0.2, 'lr': 0.0005, 'optimizer_name': 'sgd'} -> params=6424581, test_acc=0.8250
+Config {'hidden_dims': [512, 256], 'dropout': 0.4, 'lr': 0.001, 'optimizer_name': 'adam'} -> params=6424581, test_acc=0.8450
+Config {'hidden_dims': [512, 256], 'dropout': 0.4, 'lr': 0.001, 'optimizer_name': 'sgd'} -> params=6424581, test_acc=0.8240
+Config {'hidden_dims': [512, 256], 'dropout': 0.4, 'lr': 0.0005, 'optimizer_name': 'adam'} -> params=6424581, test_acc=0.8500
+Config {'hidden_dims': [512, 256], 'dropout': 0.4, 'lr': 0.0005, 'optimizer_name': 'sgd'} -> params=6424581, test_acc=0.8180
+Config {'hidden_dims': [1024, 512, 128], 'dropout': 0.2, 'lr': 0.001, 'optimizer_name': 'adam'} -> params=13175045, test_acc=0.8780
+Config {'hidden_dims': [1024, 512, 128], 'dropout': 0.2, 'lr': 0.001, 'optimizer_name': 'sgd'} -> params=13175045, test_acc=0.8140
+Config {'hidden_dims': [1024, 512, 128], 'dropout': 0.2, 'lr': 0.0005, 'optimizer_name': 'adam'} -> params=13175045, test_acc=0.8080
+Config {'hidden_dims': [1024, 512, 128], 'dropout': 0.2, 'lr': 0.0005, 'optimizer_name': 'sgd'} -> params=13175045, test_acc=0.8010
+Config {'hidden_dims': [1024, 512, 128], 'dropout': 0.4, 'lr': 0.001, 'optimizer_name': 'adam'} -> params=13175045, test_acc=0.8310
+Config {'hidden_dims': [1024, 512, 128], 'dropout': 0.4, 'lr': 0.001, 'optimizer_name': 'sgd'} -> params=13175045, test_acc=0.8080
+Config {'hidden_dims': [1024, 512, 128], 'dropout': 0.4, 'lr': 0.0005, 'optimizer_name': 'adam'} -> params=13175045, test_acc=0.8610
+Config {'hidden_dims': [1024, 512, 128], 'dropout': 0.4, 'lr': 0.0005, 'optimizer_name': 'sgd'} -> params=13175045, test_acc=0.7850
+
+Best configuration found:
+{'hidden_dims': [1024, 256], 'dropout': 0.2, 'lr': 0.0005, 'optimizer_name': 'adam', 'n_params': 12847621, 'test_accuracy': 0.893}

@@ -1,0 +1,19 @@
+# raw dataset (see data/README.md for how to get it back)
+data/raw/
+data/archive.zip
+data/*.zip
+
+# python
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.venv/
+venv/
+
+# model checkpoints
+results/checkpoints/
+*.pt
+*.pth
+
+# os
+.DS_Store
