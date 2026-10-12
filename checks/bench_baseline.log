@@ -1,0 +1,152 @@
+12:57:25 | === Blood-Cell bench | label=baseline | model=cnn ===
+12:57:25 | repo=C:\Users\Sarina\Downloads\Blood-Cell-Classification-main (1)\Blood-Cell-Classification-main
+12:57:25 | data_root=C:\Users\Sarina\AppData\Local\Temp\bloodcell_data_93d7701ffffe\merged
+12:57:25 | imported bloodcell from: C:\Users\Sarina\Downloads\Blood-Cell-Classification-main (1)\Blood-Cell-Classification-main\src\bloodcell\train.py
+12:57:25 | python=3.14.0 | torch=2.12.1+cu130 | numpy=2.3.4 | platform=Windows-11-10.0.26200-SP0 | device=cuda
+12:57:25 | epochs=3 seeds=[0, 1] batch_size=64 workers=[0] setup_repeats=5 throughput_repeats=2 grid_epochs=1
+12:57:25 | CONFIG model=cnn epochs=3 seeds=0,1 batch_size=64
+12:57:25 | [M01] split_fingerprint_match = N/A | sha256=d766eab7bab9170e6247279493c0c559fab35ee463c3734451df1747a3943a0f | n_test=1000 classes=['basophil', 'erythroblast', 'monocyte', 'myeloblast', 'seg_neutrophil']
+12:57:25 | [M05] setup_time_s = 0.016353 | median of 5 | min=0.015437 max=0.055278
+12:58:15 | [M06] loader_throughput_img_s = 955.50 | num_workers=0 | median of 2 (1 untimed warm-up)
+12:58:15 | --- training run: model=cnn seed=0 epochs=3 ---
+12:58:56 |     n_params=548645 fit_s=36.408 test_accuracy=0.856000 macro_f1=0.855947
+12:58:56 |     train_loss=[0.88425, 0.41459, 0.34142]
+12:58:56 |     test_loss =[0.43966, 0.35974, 0.36154]
+12:58:56 | RUNDATA seed=0 train_loss=0.8842482442855835,0.4145921936035156,0.3414197367429733 test_loss=0.4396567859649658,0.35974116921424865,0.3615352222919464
+12:58:56 |     epoch_calls=6 epoch_times_s=[15.974, 9.474, 10.96]
+12:58:56 |     peak_rss_mb=1303.9 cuda_peak_mb=82.8 | test_batches=80 test_iters=5 passes=5.000
+12:58:56 |     classification report (as printed by trainer.report):
+                precision    recall  f1-score   support
+
+      basophil       0.80      0.57      0.66       215
+  erythroblast       0.97      0.87      0.92       212
+      monocyte       0.66      0.96      0.78       184
+    myeloblast       0.97      0.95      0.96       204
+seg_neutrophil       0.94      0.97      0.96       185
+
+      accuracy                           0.86      1000
+     macro avg       0.87      0.86      0.86      1000
+  weighted avg       0.87      0.86      0.85      1000
+
+
+12:58:56 | --- training run: model=cnn seed=1 epochs=3 ---
+12:59:32 |     n_params=548645 fit_s=31.154 test_accuracy=0.913000 macro_f1=0.914055
+12:59:32 |     train_loss=[0.89907, 0.40109, 0.27794]
+12:59:32 |     test_loss =[0.45863, 0.39929, 0.2457]
+12:59:32 | RUNDATA seed=1 train_loss=0.8990704321861267,0.40108527064323424,0.27794223725795747 test_loss=0.4586323719024658,0.3992924094200134,0.24569712853431702
+12:59:32 |     epoch_calls=6 epoch_times_s=[10.054, 10.126, 10.975]
+12:59:32 |     peak_rss_mb=1313.9 cuda_peak_mb=93.1 | test_batches=80 test_iters=5 passes=5.000
+12:59:32 |     classification report (as printed by trainer.report):
+                precision    recall  f1-score   support
+
+      basophil       0.85      0.81      0.83       215
+  erythroblast       0.97      0.89      0.93       212
+      monocyte       0.83      0.94      0.88       184
+    myeloblast       0.95      0.99      0.97       204
+seg_neutrophil       0.97      0.95      0.96       185
+
+      accuracy                           0.91      1000
+     macro avg       0.92      0.92      0.91      1000
+  weighted avg       0.92      0.91      0.91      1000
+
+
+12:59:32 | [M02] loss_trajectory_deviation = N/A (no --baseline)
+12:59:32 | [M03] test_accuracy = 0.884500 | mean over seeds [0, 1] | per seed [0.856, 0.913]
+12:59:32 | [M04] macro_f1 = 0.885001 | mean over seeds | per seed [0.8559, 0.9141]
+12:59:32 | [M07] epoch_time_s = 10.542736 | median over 6 epochs (all seeds pooled)
+12:59:32 | [M08] peak_memory_mb = 1313.9 | max over seeds, RSS sampled during fit() | cuda_peak_mb=93.1
+12:59:32 | [M09] test_forward_passes_per_run = [5.0, 5.0] | per seed
+12:59:32 | --- grid search wall time (fixed grid: {'conv_channels': [[16, 32, 64]], 'dropout': [0.2, 0.4], 'lr': [0.001], 'optimizer_name': ['adam']}) ---
+12:59:49 | === Blood-Cell bench | label=baseline | model=cnn ===
+12:59:49 | repo=C:\Users\Sarina\Downloads\Blood-Cell-Classification-main (1)\Blood-Cell-Classification-main
+12:59:49 | data_root=C:\Users\Sarina\AppData\Local\Temp\bloodcell_data_93d7701ffffe\merged
+12:59:49 | imported bloodcell from: C:\Users\Sarina\Downloads\Blood-Cell-Classification-main (1)\Blood-Cell-Classification-main\src\bloodcell\train.py
+12:59:49 | python=3.14.0 | torch=2.12.1+cu130 | numpy=2.3.4 | platform=Windows-11-10.0.26200-SP0 | device=cuda
+12:59:49 | epochs=3 seeds=[0, 1] batch_size=64 workers=[0] setup_repeats=5 throughput_repeats=2 grid_epochs=1
+12:59:49 | CONFIG model=cnn epochs=3 seeds=0,1 batch_size=64
+12:59:49 | [M01] split_fingerprint_match = N/A | sha256=d766eab7bab9170e6247279493c0c559fab35ee463c3734451df1747a3943a0f | n_test=1000 classes=['basophil', 'erythroblast', 'monocyte', 'myeloblast', 'seg_neutrophil']
+12:59:49 | [M05] setup_time_s = 0.015378 | median of 5 | min=0.014712 max=0.051491
+13:00:04 | [M06] loader_throughput_img_s = 794.60 | num_workers=0 | median of 2 (1 untimed warm-up)
+13:00:04 | --- training run: model=cnn seed=0 epochs=3 ---
+13:00:38 |     n_params=548645 fit_s=29.498 test_accuracy=0.853000 macro_f1=0.854224
+13:00:38 |     train_loss=[0.88469, 0.4169, 0.34666]
+13:00:38 |     test_loss =[0.43994, 0.36136, 0.37846]
+13:00:38 | RUNDATA seed=0 train_loss=0.8846874022483826,0.41690252113342285,0.34666444635391236 test_loss=0.43993985748291015,0.3613600172996521,0.37845563793182374
+13:00:38 |     epoch_calls=6 epoch_times_s=[8.508, 10.77, 10.22]
+13:00:38 |     peak_rss_mb=1304.8 cuda_peak_mb=82.8 | test_batches=80 test_iters=5 passes=5.000
+13:00:38 |     classification report (as printed by trainer.report):
+                precision    recall  f1-score   support
+
+      basophil       0.77      0.59      0.67       215
+  erythroblast       0.99      0.83      0.91       212
+      monocyte       0.66      0.96      0.78       184
+    myeloblast       0.97      0.95      0.96       204
+seg_neutrophil       0.94      0.97      0.95       185
+
+      accuracy                           0.85      1000
+     macro avg       0.87      0.86      0.85      1000
+  weighted avg       0.87      0.85      0.85      1000
+
+
+13:00:38 | --- training run: model=cnn seed=1 epochs=3 ---
+13:01:09 |     n_params=548645 fit_s=28.244 test_accuracy=0.920000 macro_f1=0.921209
+13:01:09 |     train_loss=[0.90081, 0.39715, 0.27559]
+13:01:09 |     test_loss =[0.46587, 0.38638, 0.23333]
+13:01:09 | RUNDATA seed=1 train_loss=0.9008125138282775,0.3971507260799408,0.2755855728983879 test_loss=0.46586958527565003,0.38638172125816345,0.23332981860637664
+13:01:09 |     epoch_calls=6 epoch_times_s=[10.171, 10.535, 7.538]
+13:01:09 |     peak_rss_mb=1313.8 cuda_peak_mb=93.1 | test_batches=80 test_iters=5 passes=5.000
+13:01:09 |     classification report (as printed by trainer.report):
+                precision    recall  f1-score   support
+
+      basophil       0.85      0.84      0.85       215
+  erythroblast       0.97      0.90      0.93       212
+      monocyte       0.85      0.93      0.89       184
+    myeloblast       0.96      0.99      0.97       204
+seg_neutrophil       0.98      0.95      0.96       185
+
+      accuracy                           0.92      1000
+     macro avg       0.92      0.92      0.92      1000
+  weighted avg       0.92      0.92      0.92      1000
+
+
+13:01:09 | [M02] loss_trajectory_deviation = N/A (no --baseline)
+13:01:09 | [M03] test_accuracy = 0.886500 | mean over seeds [0, 1] | per seed [0.853, 0.92]
+13:01:09 | [M04] macro_f1 = 0.887717 | mean over seeds | per seed [0.8542, 0.9212]
+13:01:09 | [M07] epoch_time_s = 10.195709 | median over 6 epochs (all seeds pooled)
+13:01:09 | [M08] peak_memory_mb = 1313.8 | max over seeds, RSS sampled during fit() | cuda_peak_mb=93.1
+13:01:09 | [M09] test_forward_passes_per_run = [5.0, 5.0] | per seed
+13:01:09 | --- grid search wall time (fixed grid: {'conv_channels': [[16, 32, 64]], 'dropout': [0.2, 0.4], 'lr': [0.001], 'optimizer_name': ['adam']}) ---
+13:01:28 | [M10] grid_search_wall_time_s = 18.930 | configs=2 trained=2 skipped=0 quick_epochs=1 outcome=none 
+13:01:28 | --- determinism: re-running seed 0 ---
+13:02:01 | [M14] same_seed_accuracy_diff = 0.010000 | run1=0.853000 run2=0.863000 | (info) max |test_loss diff|=0.02671092
+13:02:01 | --- all configs over budget: max_params=1 ---
+13:02:01 | [M15] all_skipped_outcome = AttributeError | 'NoneType' object has no attribute 'items' | configs=2 skipped=2
+13:02:01 | ==============================================================================
+13:02:01 | SUMMARY  label=baseline  model=cnn  epochs=3  seeds=[0, 1]  device=cuda
+13:02:01 | M01 split_fingerprint_match       = N/A
+13:02:01 | M02 loss_trajectory_deviation     = train N/A | test N/A (ratio, max over epochs and seeds)
+13:02:01 | M03 test_accuracy                 = 0.886500 (fraction, mean over seeds)
+13:02:01 | M04 macro_f1                      = 0.887717 (mean over seeds)
+13:02:01 | M05 setup_time_s                  = 0.015378 (s, median)
+13:02:01 | M06 loader_throughput_img_s       = workers=0: 794.60 (images/s, median)
+13:02:01 | M07 epoch_time_s                  = 10.195709 (s, median over epochs)
+13:02:01 | M08 peak_memory_mb                = 1313.8 (MB RSS, max over seeds)
+13:02:01 | M09 test_forward_passes_per_run   = [5.0, 5.0] (full-loader passes per run)
+13:02:01 | M10 grid_search_wall_time_s       = 18.930 (s)
+13:02:01 | M14 same_seed_accuracy_diff       = 0.010000 (fraction)
+13:02:01 | M15 all_skipped_outcome           = AttributeError
+13:02:01 | ==============================================================================
+13:02:01 | RESULTS (machine-readable; one line per metric, full precision)
+13:02:01 | RESULT m03_test_accuracy=0.8865000000000001
+13:02:01 | RESULT m04_macro_f1=0.8877165376048726
+13:02:01 | RESULT m05_setup_time_s=0.01537800000369316
+13:02:01 | RESULT m06_loader_throughput_img_s_w0=794.5971593725725
+13:02:01 | RESULT m07_epoch_time_s=10.195708650000597
+13:02:01 | RESULT m08_peak_memory_mb=1313.8046875
+13:02:01 | RESULT m09_test_forward_passes_per_run=5.0
+13:02:01 | RESULT m10_grid_search_wall_time_s=18.929523899998458
+13:02:01 | RESULT m14_same_seed_accuracy_diff=0.010000000000000009
+13:02:01 | RESULT m15_all_skipped_raised=1
+13:02:01 | RESULT m15_all_skipped_is_attributeerror=1
+13:02:01 | RESULT missing_metric_count=3
+13:02:01 | log: C:\Users\Sarina\Downloads\Blood-Cell-Classification-main (1)\Blood-Cell-Classification-main\checks\bench_baseline.log
